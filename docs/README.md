@@ -215,16 +215,22 @@ Surge 每个配置段的详细文档。
 
 ## 维护
 
-重新爬取和清洗：
+重新爬取和清洗（脚本使用 `__file__` 相对路径，任意目录均可运行）：
 
 ```bash
 # 重新爬取 manual（通过 Jina Reader）并清洗
-python scripts/crawl_surge_docs.py   # → docs/manual/
-python scripts/clean_surge_docs.py   # 原地清洗
+python3 scripts/crawl_surge_docs.py   # → docs/manual/
+python3 scripts/clean_surge_docs.py   # 原地清洗
 
 # 重新爬取知识库（直接获取 .md）
-python scripts/crawl_surge_kb.py     # → docs/kb/
+python3 scripts/crawl_surge_kb.py     # → docs/kb/
 ```
+
+> **注意**：脚本默认跳过已有文件。如需强制重新下载，先删除对应目录再运行：
+> ```bash
+> rm -rf docs/manual && python3 scripts/crawl_surge_docs.py && python3 scripts/clean_surge_docs.py
+> rm -rf docs/kb && python3 scripts/crawl_surge_kb.py
+> ```
 
 ## 格式说明
 

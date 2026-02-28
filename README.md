@@ -60,12 +60,14 @@
 
 ```bash
 # 重新爬取 manual（通过 Jina Reader）并清洗
-python scripts/crawl_surge_docs.py
-python scripts/clean_surge_docs.py
+python3 scripts/crawl_surge_docs.py
+python3 scripts/clean_surge_docs.py
 
 # 重新爬取知识库（直接获取 GitBook .md）
-python scripts/crawl_surge_kb.py
+python3 scripts/crawl_surge_kb.py
 ```
+
+> **注意**：脚本默认跳过已有文件。如需强制重新下载，先删除对应目录再运行。
 
 重新爬取后，若 Surge 新增了文档页面，可能需要同步更新 `SKILL.md` 中的路由表。
 
