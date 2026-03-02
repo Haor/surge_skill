@@ -213,6 +213,7 @@ All paths below are relative to this skill's directory (`.claude/skills/surge/`)
 | Config guide: Host, Rewrite & MITM (配置详解, [Host]/[URL Rewrite]/[Header Rewrite]/[Map Local]/[SSID Setting]/[MITM]/[Snell Server], ca-p12, hostname) | `docs/community/zhuangzhuang/rewrite-and-mitm.md` |
 | Config guide: Script & Module (配置详解, [Script] http-request/http-response/cron/event/rule/dns, 模块 sgmodule, %APPEND%/%INSERT%, 大佬规则集) | `docs/community/zhuangzhuang/script-and-module.md` |
 | Policy group icons (策略图标, 图标订阅, icon subscription JSON) | `docs/community/policy-icons.md` |
+| Config validation API (配置校验 API, 配置合法性检查, 官方校验接口, validate, services.nssurge.com, /v1/config/validate, valid, error, profile 字段, beta) | `docs/official/config-validate-api.md` |
 
 > **Freshness note**: Community tutorials may be outdated. Always cross-reference with official `docs/manual/` for authoritative information. When citing community content, note the source and date.
 
